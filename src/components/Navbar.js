@@ -5,18 +5,16 @@ export default function Navbar() {
   let location = useLocation();
   let navigate = useNavigate();
 
-  useEffect(() => {
-  }, [location]);
+  useEffect(() => {}, [location]);
 
   const handleOnlogout = () => {
     try {
-        if (localStorage.getItem('token')) {
-            localStorage.removeItem("token");
-            navigate("/signin");
-        }
-        else {
-            alert('something went wrong')
-        }
+      if (localStorage.getItem("token")) {
+        localStorage.removeItem("token");
+        navigate("/signin");
+      } else {
+        alert("something went wrong");
+      }
     } catch (error) {
       alert("Something gome wrong", error);
     }
@@ -24,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{fontFamily : 'forte'}}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             INoteBook

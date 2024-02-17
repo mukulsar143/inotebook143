@@ -27,8 +27,8 @@ export default function AddNotes(props) {
 
 
     return (
-        <div className='container my-3'>
-            <h1 className='my-3 mx-2'>Add Notes</h1>
+        <div className='container my-3' style={{fontFamily : 'forte', marginTop: '30px'}}>
+            <h1 className='my-3 mx-2 text-center'>Add Notes</h1>
             <form className='container'>
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">Title</label>

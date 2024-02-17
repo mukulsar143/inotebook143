@@ -134,12 +134,14 @@ export default function Notes(props) {
           </div>
         </div>
       </form>
-      <div className="container row my-3 mx-2">
+      <div className="container row my-3 mx-2" style={{fontFamily : 'forte'}}>
         <h2>Your Notes</h2>
+        <div className="container row mx-1" style={{fontFamily : 'forte'}}>
         {notes.length ===0 && 'No Notes to Display'}
         {notes.map((note) => (
           <NotesItems key={note.id} showAlert = {props.showAlert} OnSearch = {props.OnSearch} host = {props.host} updateNote={updateNote} note={note} />
         ))}
+        </div>
       </div>
     </>
   );

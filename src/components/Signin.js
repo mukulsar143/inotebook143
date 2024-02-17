@@ -33,12 +33,11 @@ export default function Signin(props) {
   }
 
   return (
-    <div className="container my-3">
+    <div className="container" style={{fontFamily: 'forte'}}>
+      <h5 className="card-title mx-3">Sign In to Create INoteBook Account</h5> 
       <div className="card-body">
-        <h5 className="card-title">Sign In </h5>
-
-        <form onSubmit={handleonSubmit}>
-          <div className="row mb-3 my-3">
+        <form onSubmit={handleonSubmit} className="my-3">
+          <div className="row mb-3 my-2">
             <label htmlFor="fisrt_name" className="col-sm-2 col-form-label">
               First Name
             </label>

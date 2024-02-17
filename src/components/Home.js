@@ -28,6 +28,7 @@ export default function Home(props) {
           <input
             onChange={handleOnchange}
             className="form-control me-2"
+            style={{marginLeft : '20px'}}
             type="search"
             placeholder="Search"
             aria-label="Search"

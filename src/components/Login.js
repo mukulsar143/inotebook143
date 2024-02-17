@@ -37,10 +37,9 @@ export default function Login(props) {
   };
 
   return (
-    <div className="container my-3">
+    <div className="container my-3" style={{fontFamily : 'forte'}}>
+       <h5 className="card-title mx-3">Log In to Continue Home Page.. </h5>
       <div className="card-body">
-        <h5 className="card-title">Log In to Continue Home Page.. </h5>
-
         <form onSubmit={handleonSubmit}>
           <div className="row mb-3 my-3">
             <label htmlFor="username" className="col-sm-2 col-form-label">
